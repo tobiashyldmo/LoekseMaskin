@@ -55,7 +55,7 @@ ROOT_URLCONF = 'LoekseMaskin.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')], #Denne gjør at templates ligger i en folder utenfor.
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
