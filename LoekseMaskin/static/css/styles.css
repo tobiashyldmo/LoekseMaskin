@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    background: #94c8d2;
+    font-family: 'cursive', 'Futura', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+p {
+    color: red;
+    border: 1px solid powderblue;
+    padding: 30px;
+    text-align: center;
+}
