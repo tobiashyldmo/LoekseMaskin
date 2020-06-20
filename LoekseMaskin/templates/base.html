@@ -8,12 +8,11 @@
     </head>
     {# The navigation bar #}
     <div class="topnav">
-        <a class="active" href="hjem">Hjem</a>
-        <a href="blogg">Blogg</a>
-        <a href="kontakt">Kontakt oss</a>
-        <a href="om">Om oss</a>
+        <a class="active" href="{% url 'home' %}">Hjem</a>
+        <a href="{% url 'blogg' %}">Blogg</a>
+        <a href="{% url 'kontakt' %}">Kontakt oss</a>
+        <a href="{% url 'om' %}">Om oss</a>
     </div>
-
     <body>
     {% block content %}
     {% endblock content %}
