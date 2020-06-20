@@ -1,23 +1,8 @@
+{% extends 'base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/static/css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hjemmesiden</title>
-</head>
-
-<div class="topnav">
-    <a class="active" href="hjem">Hjem</a>
-    <a href="blogg">Blogg</a>
-    <a href="kontakt">Kontakt oss</a>
-    <a href="om">Om oss</a>
-</div>
-
+{% block content %}
 <body>
-
 <h1>Hjemmeside</h1>
 
 <br>
@@ -25,15 +10,4 @@
 
 <p> Velkommen til hjemmesiden vår! </p>
 </body>
-</html>
-
-
-{# The Footer #}
-<div class="footer">
-    <div class="container">
-        <footer>Copyright: Løkse Maskin AS <br>
-        Author: Tobias Hyldmo<br>
-            <a href="mailto:tobiashyldmo@gmail.com">tobiashyldmo@gmail.com</a></footer>
-
-    </div>
-</div>
+{% endblock content %}
