@@ -1,8 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/static/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hjemmesiden</title>
+    </head>
+    {# The navigation bar #}
+    <div class="topnav">
+        <a class="active" href="hjem">Hjem</a>
+        <a href="blogg">Blogg</a>
+        <a href="kontakt">Kontakt oss</a>
+        <a href="om">Om oss</a>
+    </div>
+
+    <body>
+    {% block content %}
+    {% endblock content %}
+    </body>
+</html>
+
 
 
 {# The Footer #}
 <div class="footer">
     <div class="container">
-        <p>Copyright Løkse Maskin</p>
+        <footer>Copyright: Løkse Maskin AS <br>
+            Author: Tobias Hyldmo<br>
+            <a href="mailto:tobiashyldmo@gmail.com">tobiashyldmo@gmail.com</a></footer>
+
     </div>
 </div>
