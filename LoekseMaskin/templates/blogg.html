@@ -3,4 +3,21 @@
 
 {% block content %}
 <p> HER KOMMER DET BLOGGINNLEGG</p>
+
 {% endblock content %}
+
+<div class="todolist">
+    <br>
+    {% for blog in blog_list %}
+    hei
+    <button onclick="myFunction({{ blog.number }})"> {{ blog.headline }}  </button> <br>
+    {% endfor %}
+    <br>
+</div> <center/>
+
+
+<script>
+    function myFunction(num) {
+        location.assign("http://127.0.0.1:8000/blogg/" + num)
+    }
+</script>
